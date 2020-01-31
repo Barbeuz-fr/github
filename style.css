@@ -1,0 +1,204 @@
+/* Importing Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+/*/* Importing components */
+/*@import url("components/sidebars.css");
+@import url("components/badges.css");
+@import url("components/chat.css");
+@import url("components/messages.css");
+*/
+/* Importing layouts */
+/*@import url("layouts/slack.css");*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 23px;
+}
+.padded {
+  padding: 30px 0;
+}
+
+.container {
+  padding: 0px 20px 0px 0px;
+}
+
+.link-style {
+  text-decoration: none;
+}
+
+
+.link-style:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color:white;
+  font-size:14px;
+  font-style:italic;
+}
+
+/* main layout*/
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 100px 240px 1fr
+}
+
+
+/*side bars*/
+
+.side-bar {
+  display: grid;
+  background-color: #261B25;
+  color:white;
+  justify-content: center;
+  align-content: flex-start;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+.mid-bar {
+  display: grid;
+  color:white;
+  background-color: #4B3949;
+  align-content: flex-start;
+  height: 100vh;
+}
+
+.chat-bar {
+  display: grid;
+  color: black;
+  background-color: white;
+  height: 100vh;
+  padding: 0 0 0 10px;
+  grid-template-rows: 1fr 9fr 1fr;
+}
+
+.channel-info {
+  display: grid;
+  align-content: flex-start;
+  padding: 15px 10px 10px 20px;
+}
+
+.channel-info h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.channel-info h2 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.channel-info p {
+  color: #A59CA4;
+  font-size: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.title-header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex
+}
+
+
+/* chat.css*/
+
+.chat-header {
+  height: 50px;
+  background-color: white;
+  border-bottom: solid 1px lightgrey;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat {
+  align-items: center;
+  margin-bottom: 4px;
+  overflow: scroll;
+}
+
+.chat-box {
+  width: 95%;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  position: sticky;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+.chat h1 {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chat p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  overflow: scroll;
+}
+
+.chat-box:focus {
+  border: solid 1px lightblue;
+  box-shadow: none;
+}
+
+.chat-item {
+  display: inline-flex;
+  width: 100%;
+}
+
+
+/* badges*/
+
+.side-bar-button {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  background-color: #514851;
+  border-radius: 3px;
+  text-align: center;
+  width: 50px;
+  height: 40px;
+  align-content: center;
+  font-weight: bolder;
+  margin: 5px;
+}
+
+.not-selected {
+  background-color: #261B25;
+  color: #4B3949;
+
+}
+
+.not-selected:hover {
+  color: #FFFFFF;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
